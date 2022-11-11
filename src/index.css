@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F6F6F6;
+}
+* {
+  box-sizing: border-box;
+ 
+}
+
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.button-section {
+  margin: 3%;
+}
+.button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: royalblue;
+}
+
+.remove {
+  background-color: rgb(192, 53, 53);
+}
+.remove:hover {
+  background-color: rgb(187, 43, 43);
+}
+
+.inactive {
+  color: #375a9e;
+  background-color: #fff;
+}
+
+.active {
+  background-color: #375a9e;
+  color: #fff;
+}
+
+@layer base {
+  h6 {
+    @apply text-[18px] text-charcoal  font-[500];
+  }
+  h4 {
+    @apply cursor-pointer  text-[18px] px-3;
+  }
+  h5 {
+    @apply text-[20px] text-blue  font-[500] cursor-pointer;
+  }
+  h3 {
+    @apply text-[16px] text-charcoal  font-[600];
+  }
+  button {
+    @apply rounded-full text-[14px] font-[300] py-1 px-10 cursor-pointer;
+  }
+}
+
+* {
+  font-family: "Ubuntu", sans-serif;
+}

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap");
 
 * {
   font-family: "Noto Sans";
@@ -39,11 +39,10 @@ ul {
 }
 
 .add-btn {
-  width: 30px;
+  width: 100px;
   background-color: #5f9df7;
   cursor: pointer;
   color: white;
-  border-radius: 100%;
   margin-left: 10px;
 }
 
@@ -72,4 +71,4 @@ ul {
   color: red;
   border-radius: 5px;
   cursor: pointer;
-}
+} */

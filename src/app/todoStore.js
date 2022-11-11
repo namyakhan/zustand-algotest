@@ -15,7 +15,7 @@ const todoStore = (set) => ({
       todos: [...state.todos.filter((c) => c.id !== todoId)],
     }));
   },
-  //   Course status
+  //duplicate course
   toggleTodo: (todoId) => {
     set((state) => ({
       todos: state.todos.map((todo) =>
