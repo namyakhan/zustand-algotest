@@ -40,7 +40,6 @@ const TodoInput = () => {
   };
 
   // Components
-  
   const Futures = () => {
     return (
       <div className="mt-5 flex flex-col items-center justify-center ">
