@@ -5,12 +5,25 @@ import { DocumentDuplicateIcon } from "@heroicons/react/24/outline";
 import MomentumAndTrail from "./MomentumAndTrail";
 
 const TodoList = () => {
-  const [leg, setLeg] = useState("");
+  const addTodo = useTodoStore((state) => state.addTodo);
 
+  const [leg, setLeg] = useState("");
+  const [position, setPosition] = useState("");
   const { todos, removeTodo } = useTodoStore((state) => ({
     todos: state.todos,
     removeTodo: state.removeTodo,
   }));
+
+  const handleTodoSubmit = () => {
+    addTodo({
+      id: Math.ceil(Math.random() * 1000000),
+      leg: leg,
+      position: position,
+    });
+
+    setLeg("");
+    setPosition("");
+  };
 
   return (
     <div className="flex flex-col items-center">
@@ -27,7 +40,7 @@ const TodoList = () => {
                   className="float-right text-red-400 h-5 w-5"
                 />
                 <DocumentDuplicateIcon
-                  onClick={() => removeTodo(todo.id)}
+                  onClick={handleTodoSubmit}
                   className="float-right text-gray-400 h-5 w-5"
                 />
               </div>
