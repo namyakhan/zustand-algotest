@@ -15,14 +15,6 @@ const todoStore = (set) => ({
       todos: [...state.todos.filter((c) => c.id !== todoId)],
     }));
   },
-
-  toggleTodo: (todoId) => {
-    set((state) => ({
-      todos: state.todos.map((todo) =>
-        todo.id === todoId ? { ...todo, completed: !todo.completed } : todo
-      ),
-    }));
-  },
 });
 
 const useTodoStore = create(

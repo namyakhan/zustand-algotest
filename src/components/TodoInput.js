@@ -6,7 +6,6 @@ const TodoInput = () => {
 
   const [leg, setLeg] = useState("");
   const [position, setPosition] = useState("");
-  // OLD states
   const [isShown, setIsShown] = useState(false);
   const [isFuturesShown, setIsFuturesShown] = useState(false);
   const [isOptionsShown, setIsOptionsShown] = useState(false);
@@ -18,7 +17,6 @@ const TodoInput = () => {
       leg: leg,
       position: position,
     });
-
     setLeg("");
     setPosition("");
   };

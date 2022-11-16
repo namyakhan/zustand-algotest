@@ -10,7 +10,7 @@ const SimpleMomentum = () => {
   return (
     <div className={`mt-5 opacity-${opacity}`}>
       <input
-        onClick={handleOpacity} 
+        onClick={handleOpacity}
         type="checkbox"
         name="simple momentum"
         value="simple momentum"
